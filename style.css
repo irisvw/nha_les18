@@ -7,6 +7,7 @@ header {
     padding: 1rem;
     min-height: 100px;
     width: 100%;
+    border-radius: 5px;
 }
 
 .koptekst {
@@ -23,27 +24,42 @@ body {
     font-family: sans-serif;
 }
 
-.main {
-    background-color: lightgreen;
-}
-
 .sideimage {
     float: right;
     margin: 0px 0px 15px 15px;
+    border-radius: 5px;
 }
 
 article {
     margin: 1rem;
-    padding: 1rem;
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: lightgreen;
+    min-width: 100px;
+}
+
+.sidebar {
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: lightblue;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+ul {
+    padding: 0rem 1rem 1rem 1rem;
 }
 
 /* Footer */
 footer {
     width: 100%;
-    min-height: 100px;
+    min-height: 25px;
     clear: left;
     text-align: center;
     padding: 1rem;
+    background-color: aliceblue;
+    border-radius: 5px;
 }
 
 
@@ -55,6 +71,11 @@ footer {
 @media only screen and (min-width: 768px) {
     body {
         margin: 0 100px;
+    }
+
+    .sidebar {
+        margin: 1rem 0rem;
+        min-height: 510px;
     }
     [class*="col-"] {
         float: left;
